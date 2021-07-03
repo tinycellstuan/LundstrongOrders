@@ -3,27 +3,30 @@
   "version": "3.0.0",
   "description": "A beautiful ordering system.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rbxtsc && rbxmxc",
+    "build:watch": "concurrently -c cyan,yellow -n Typescript,Roblox-ts,rbxmx-to-ts -s first -k \"rbxtsc -w\" \"rbxmxc -w\""
   },
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@rbxts/datastore2": "^1.4.0-ts.0",
-    "@rbxts/net": "^2.1.3",
-    "@rbxts/services": "^1.1.5",
-    "@rbxts/t": "^2.1.4"
+    "@rbxts/datastore2": "1.4.0-ts.0",
+    "@rbxts/net": "2.1.3",
+    "@rbxts/services": "1.1.5",
+    "@rbxts/t": "2.1.4"
   },
   "devDependencies": {
-    "@rbxts/compiler-types": "^1.1.1-types.3",
-    "@rbxts/types": "^1.0.496",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "eslint": "^7.29.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-roblox-ts": "0.0.28",
-    "prettier": "^2.3.1",
-    "typescript": "^4.3.4"
+    "@rbxts/compiler-types": "1.1.1-types.3",
+    "@rbxts/types": "1.0.496",
+    "@typescript-eslint/eslint-plugin": "4.28.1",
+    "@typescript-eslint/parser": "4.28.1",
+    "concurrently": "6.2.0",
+    "eslint": "7.30.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-roblox-ts": "0.0.29",
+    "prettier": "2.3.2",
+    "rbxmx-to-ts": "1.0.1",
+    "typescript": "4.3.5"
   }
 }
