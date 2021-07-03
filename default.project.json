@@ -22,6 +22,14 @@
 			"$className": "ServerScriptService",
 			"$ignoreUnknownInstances": true,
 			"$path": "out/Server"
+		},
+		"Workspace": {
+			"$className": "Workspace",
+			"$ignoreUnknownInstances": true,
+			"LundstrongOrders": {
+				"$ignoreUnknownInstances": true,
+				"$path": "out/Workspace"
+			}
 		}
 	}
 }
